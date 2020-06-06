@@ -1,11 +1,16 @@
-import speech_recognition as sr
-import json
 
-from ibm_watson import SpeechToTextV1
+speak = "한국성서대학교 검색해 줘"
 
-r = sr.Recognizer()
-speech = sr.Microphone()
-speech_to_text = SpeechToTextV1(
-    iam_apikey="cTiQBu_VQd5SIoKyMPKsDAqCcFmEh2O9-4RE0FD34YWs",
-    url="https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/c437b593-8ca8-4052-ba4a-5d56528c5d78"
-)
+List = list(speak)
+
+for i in range(0,len(List)):
+
+    if List[i] == '검':
+
+        if List[i+1] == '색':
+
+            if List[i+2] == '해':
+
+                if List[i+4] == '줘':
+
+                    print("검색")
