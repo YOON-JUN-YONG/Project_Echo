@@ -141,6 +141,9 @@ def finding(): # 검색 함수
 
     for title in Soup.findAll('title'):
 
+        print(title.string)
+        print(title)
+
         if title.string == Title: # 검색 결과가 있을 때
 
             title.parent # title의 부모 트리인 doc 호출
